@@ -1,0 +1,272 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff ;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+/*---------------------- Header + Sub Header -------------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background-color: #444242;
+    left: 0px;
+    top: 0px;  
+    
+}
+
+
+nav {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;   
+    width: 100%;
+    height: 64px;     
+    padding: 10px;
+    margin: 0px 0px;
+}
+
+.voltar-icon{
+    width: 30px;
+    height: 30px;
+
+}
+
+.logo-png{
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+
+#header-botoes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.carrinho-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+    
+    
+}
+
+.header-botao {
+    width: 25px;
+    height: 25px;
+    
+    
+}
+
+.sub-header{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 64px;
+
+}
+
+.text-sub-header{
+    position: absolute;
+    left: 10px;
+    color: #FA9401 ;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*---------------------------------- Main ------------*/
+
+main{
+    padding: 0px;
+    margin: 0px;
+}
+
+.inf-list{
+    color: #5B5A5A;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.inf-ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.inf-list .inf-ul .inf-li  {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-weight: 400;
+    border-bottom:  solid 1px #E8E8E8;
+
+}
+
+
+#if-icon{
+    padding: 0px;
+    margin: 0px 15px;
+    width: 25px;
+    height: 25px;
+
+}
+
+
+
+ /*----------------------------- Social-Icons -------*/
+
+
+
+.social a:before {
+    content: '';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;                       
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.social .social-icons > a {
+    display:inline-block;
+    margin:0 15px;
+  }
+
+
+
+.facebook:before {
+    background-image: url(../img/social-icons/facebook-color-icon.png);
+}
+.whatsapp:before {
+    background-image: url(../img/social-icons/whatsapp-icon.png);
+}
+.ig:before {
+    background-image: url(../img/social-icons/ig-color-icon.png);
+}
+.linkedin:before {
+    background-image: url(../img/social-icons/linkedin-icon.png);
+}
+.youtube:before {
+    background-image: url(../img/social-icons/youtube-icon.png);
+}
+
+  
+
+.social .social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding-bottom: 50px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.botao-footer .botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #FA9401;
+    border-color: #FA9401;
+
+
+}
+
+.botao{
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+/*
+
+
+@media only screen and (min-device-width: 1024px) {
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
+    
+    
+}
+
+@media only screen and (min-device-width: 640px) and (max-device-width: 767px){
+    
+}
+
+@media only screen and (min-device-width: 568px) and (max-device-width: 639px){
+   
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 567px){
+    
+}
+
+@media only screen and (max-device-width: 359px){
+
+}
+
+*/

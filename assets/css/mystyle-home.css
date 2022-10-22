@@ -1,0 +1,750 @@
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #444242 ;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 64px;    
+    
+}
+
+.header-botao {
+    max-width: 26px;
+    max-height: 20px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+/* -------------------  SELECT IDIOMA ----------------*/
+.idioma-menu {
+    width: 120px;
+    height: 30px;
+    top: 15px;
+    left: 15px;
+    color: #444242;
+    background-color: white;
+    border-radius: 50px;
+    margin: 5px 0px 0px 5px
+    
+}
+
+
+.idioma-menu span{ 
+    color: #444242;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+
+    width: 40px;
+    height: 14px;
+}
+
+#idioma{
+    font-size: 14px;
+}
+
+.en .ptbr{
+    color: #444242;
+}
+
+
+.idioma-menu .selected-idioma {
+
+    display: flex;
+    justify-content:space-evenly;
+    line-height: 2;
+    cursor: pointer;
+}
+.idioma-menu .selected-idioma::after {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/countries-icons/brasil.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.idioma-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    width: 120px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.idioma-menu ul li {
+
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.idioma-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.idioma-menu ul li:hover {
+    background-color: #f2f2f2;
+    border-radius: 50px;
+   
+}
+
+
+.idioma-menu ul li a:after {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.en:after {
+    background-image: url(../img/countries-icons/estados-unidos.png);
+}
+.ptbr:after {
+    background-image: url(../img/countries-icons/brasil.png);
+}
+
+
+
+.idioma-menu:hover ul {
+    display: block;
+}
+
+
+/* ---------------------------------- LOGO + BOTOES ----------------*/
+
+
+.logo_botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    
+
+    
+    
+    
+  
+}
+
+.logo-png{
+    display: flex;
+    flex: none;
+    width: 300px;
+    height: 100px;
+    
+    
+}
+
+
+
+.botoes{  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+
+
+
+}
+
+.botoes ul li{
+    list-style: none;
+   
+}
+
+ul.botoes-ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.botoes .botoes-ul .botoes-li  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 50px;
+
+}
+
+#pesquisa{
+    background-color: #FA9401;
+    border: solid 1px #444242 ;
+
+}
+
+.botoes-li {
+    background-color: #444242;
+    border: solid 1px #FA9401 ;
+    color: white;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.botoes ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#pesquisa:before {
+    background-image: url(../img/white-icons/search-icon.png);
+}
+
+#lancamento:before {
+    background-image: url(../img/white-icons/lancamento-icon.png);
+}
+
+#carrinho:before {
+    background-image: url(../img/white-icons/carrinho-icon.png);
+}
+
+#contato:before {
+    background-image: url(../img/white-icons/contato-icon.png);
+}
+
+
+
+/*------------------------------------FOOTER-SOCIAL----------------*/
+
+.social-icons .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    margin-top: 20px;
+    }
+
+
+.social a:before {
+    content: '';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;   
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.social-icons .social > a {
+    display:inline-block;
+    margin:0 8px;
+  }
+
+
+.site:before {
+    background-image: url(../img/social-icons/site-icon.png);
+}
+.facebook:before {
+    background-image: url(../img/social-icons/facebook-icon.png);
+}
+.ig:before {
+    background-image: url(../img/social-icons/ig-icon.png);
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------CONFIGS - RESPONSIVOS---------------*/
+
+@media only screen and (min-device-width: 1024px) {
+    /* ---------------------------------- LOGO + BOTOES ----------------*/
+
+    .logo_botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-top: 100px;
+    
+    }
+
+    ul.botoes-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 150px;
+        margin: 0px;
+
+    }
+    
+    .botoes-ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .botoes ul li{
+        list-style: none;
+    }
+    
+    .botoes .botoes-ul .botoes-li  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 264px;
+        height: 50px;
+    }
+    
+    #pesquisa{
+        background-color: #FA9401;
+        border: solid 1px #FA9401 ;
+    
+    }
+    
+    .botoes-li {
+        background-color: #444242;
+        border: solid 1px #FA9401 ;
+        color: white;
+        border-radius: 50px;
+        margin: 10px 10px;
+        
+    }
+    
+    .botoes ul li a:before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+   
+    .pseudo-footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 5px;
+     
+ }
+    
+
+    
+    
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px){
+    
+/* ---------------------------------- LOGO + BOTOES ----------------*/
+        
+.logo_botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-top: 100px;
+
+}
+
+
+
+.logo-png{
+    display: flex;
+    flex: none;
+    width: 100%;
+    height: 120px;
+    
+    
+}
+
+
+
+.botoes{  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+
+.botoes ul li{
+    list-style: none;
+   
+}
+
+ul.botoes-ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.botoes .botoes-ul .botoes-li  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 50px;
+
+}
+
+#pesquisa{
+    background-color: #FA9401;
+    border: solid 1px #FA9401 ;
+
+}
+
+.botoes-li {
+    background-color: #444242;
+    border: solid 1px #FA9401 ;
+    color: white;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.botoes ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#pesquisa:before {
+    background-image: url(../img/white-icons/search-icon.png);
+}
+
+#lancamento:before {
+    background-image: url(../img/white-icons/lancamento-icon.png);
+}
+
+#carrinho:before {
+    background-image: url(../img/white-icons/carrinho-icon.png);
+}
+
+#contato:before {
+    background-image: url(../img/white-icons/contato-icon.png);
+}
+
+
+
+/* ---------------------------------- /LOGO + BOTOES ----------------*/
+
+
+.pseudo-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 5px;
+ 
+}
+
+    
+}
+
+@media only screen and (min-device-width: 640px) and (max-device-width: 767px){
+     
+            /* ---------------------------------- LOGO + BOTOES ----------------*/
+/* ---------------------------------- LOGO + BOTOES ----------------*/
+
+ul.botoes-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo_botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    
+    
+
+
+} 
+
+.logo-png{
+    display: flex;
+    flex: none;
+    width: 100%;
+    height: 120px;
+}
+
+
+
+.botoes{  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    color:white;
+    
+}
+
+.botoes-ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.botoes ul li{
+    list-style: none;
+}
+
+.botoes .botoes-ul .botoes-li  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 264px;
+    height: 50px;
+}
+
+#pesquisa{
+    background-color: #FA9401;
+    border: solid 1px #FA9401 ;
+
+}
+
+.botoes-li {
+    background-color: #444242;
+    border: solid 1px #FA9401 ;
+    color: white;
+    border-radius: 50px;
+    margin: 10px 10px;
+    
+}
+
+.botoes ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.social a:before {
+    content: none;
+}
+
+}
+
+@media only screen and (min-device-width: 568px) and (max-device-width: 639px){
+    body{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #FFB64E ;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
+
+    /* ---------------------------------- LOGO + BOTOES ----------------*/
+
+    ul.botoes-ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    
+    .logo_botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        
+    
+    } 
+    
+    .logo-png{
+        display: flex;
+        flex: none;
+        width: 100%;
+        height: 110px;
+    }
+    
+    
+    
+    .botoes{  
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: center;
+        color:white;
+        
+    }
+    
+    .botoes-ul{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    
+    .botoes ul li{
+        list-style: none;
+    }
+    
+    .botoes .botoes-ul .botoes-li  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 250px;
+        height: 50px;
+    }
+    
+    #pesquisa{
+        background-color: #FA9401;
+        border: solid 2px #444242 ;
+    
+    }
+    
+    .botoes-li {
+        background-color: #444242;
+        border: solid 2px #fff ;
+        color: white;
+        border-radius: 50px;
+        margin: 10px 10px;
+        
+    }
+    
+    .botoes ul li a:before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 567px){
+
+}
+
+@media only screen and (max-device-width: 320px){
+    body{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #FFB64E ;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #pesquisa{
+        background-color: #FA9401;
+        border: solid 2px #444242 ;
+    
+    }
+    
+    .botoes-li {
+        background-color: #444242;
+        border: solid 2px #fff ;
+        color: white;
+        border-radius: 50px;
+        margin-top: 15px;
+    }
+
+  
+}
+
+
+
+
+
+
